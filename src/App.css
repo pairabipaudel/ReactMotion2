@@ -1,0 +1,190 @@
+.full_container{
+    height: 100%;
+    width: 100%;  
+}
+
+header{
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+header img{
+    width: 40px;
+    height: 40px;
+}
+
+.startHeader{
+    display: flex;
+    gap:5px;
+    padding-left: 10px;
+}
+
+.startHeader p{
+    font-weight: 24px;
+}
+
+.middleHeader{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.middleHeader input{
+    width: 450px;
+    min-width: 40%;
+    height:20px;
+    padding: 10px;
+    color: grey;
+    border-radius: 5px;
+    border: 2px solid grey;
+    outline: none;
+}
+
+.endHeader{
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.container {
+   width:100%;
+   height: 100%;
+   overflow-x: scroll;
+   display: flex;
+   scrollbar-width: none;
+   margin-top: 60px;
+}
+
+
+
+.img_container{
+    width:250px;
+    height:auto;
+    position: relative;
+     top:-100px;
+ 
+}
+
+.img_container img{
+   
+    width:100%;
+    height:100%;
+    box-shadow: 6px 6px 15px rgba(75, 140, 75,0.5);
+}
+
+.title{
+    font-weight: 20px;
+    font-weight: 700;
+}
+
+.description{
+    color: rgb(65, 64, 64);
+}
+
+
+.normal_description p{
+    position: relative;
+    top:-80px
+}
+
+
+
+
+.eachContainer:hover .normal_description{
+    display: none;
+}
+
+.eachContainer:hover .extraDescriptionContainer {
+  display: block;
+}
+
+.eachContainer{
+    padding:20px;
+    border: 1px solid rgb(145, 144, 144);
+    height: 450px;
+    width:300px;
+    margin: 20px;
+    margin-top: 160px;
+    border-radius: 15px;
+    cursor: pointer;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(252, 247, 226,0.5);
+}
+
+
+
+.extraDescriptionContainer{
+    width:280px;
+    display: none;
+    padding: 20px;
+    align-content: center;
+    
+}
+
+.rightArrow, .leftArrow{
+    display: none;
+    position: fixed;
+    
+}
+
+.rightArrow button , .leftArrow button{
+   
+    width:40px;
+    height: 40px;
+     padding: 5px;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 50%;
+    border:none;
+    background-color: rgba(143, 142, 142,0.3);
+    z-index: 1000;
+}
+
+.container:hover .rightArrow{
+    display: block;
+    top:60%;
+    right:5px;
+}
+
+.container:hover .leftArrow{
+    display: block;
+    top:60%;
+    left:5px;
+}
+
+.extraDescription{
+    font-size: 18px;
+    color: grey;
+}
+
+
+
+.startHeader p{
+    font-family:fantasy;
+    font-weight: 20px;
+  
+    
+    color: rgb(5, 91, 24);
+}
+
+.searchButton{
+    margin-left: -60px;
+    width: 60px;
+    height: 43px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+
+
+
+
+
